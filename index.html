@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Đề thi thử JLPT N5 tháng 12/2021 - Thi online với chấm điểm tự động">
+  <title>Thi thử JLPT N5 - Đề 12/2021</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== SCREEN 1: INTRO ==================== -->
+<div id="screen-intro" class="screen active">
+  <div class="intro-container">
+    <div class="intro-card">
+      <div class="intro-logo">
+        <div class="badge">JLPT N5</div>
+        <h1>日本語能力試験 N5</h1>
+        <p class="subtitle">Đề thi thử tháng 12/2021</p>
+      </div>
+
+      <div class="intro-info">
+        <h3>📋 Thông tin đề thi</h3>
+        <ul>
+          <li>Phần 1: 言語知識（文字・語彙）- Hán tự, Từ vựng — 20 phút</li>
+          <li>Phần 2: 言語知識（文法）・読解 - Ngữ pháp, Đọc hiểu — 40 phút</li>
+          <li>Phần 3: 聴解 - Nghe hiểu — 30 phút</li>
+          <li>Tổng thời gian: 90 phút | Tổng điểm: 180 điểm</li>
+          <li>Điểm đỗ: ≥ 85/180 (Không có điểm liệt dưới ngưỡng)</li>
+          <li>Điểm liệt phần 言語知識・読解: ≥ 38/120</li>
+          <li>Điểm liệt phần 聴解: ≥ 19/60</li>
+        </ul>
+      </div>
+
+      <div class="form-group">
+        <label for="input-name">Họ và tên <span style="color:var(--danger)">*</span></label>
+        <input type="text" id="input-name" placeholder="Nhập họ tên của bạn" required>
+      </div>
+      <div class="form-group">
+        <label for="input-class">Lớp</label>
+        <input type="text" id="input-class" placeholder="Nhập lớp (VD: N5-A)">
+      </div>
+
+      <button id="btn-start" class="btn btn-primary btn-large">🚀 Bắt đầu thi</button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SCREEN 2: EXAM ==================== -->
+<div id="screen-exam" class="screen">
+  <!-- HEADER -->
+  <div class="exam-header">
+    <div class="exam-header-inner">
+      <div class="exam-title">📝 JLPT N5 — 12/2021</div>
+      <div class="timer-container">
+        <span class="timer-icon">⏱️</span>
+        <span id="timer-display" class="timer-display">90:00</span>
+        <span id="progress-text" style="font-size:0.8rem; color:var(--text-muted);">0/67</span>
+      </div>
+      <div class="exam-nav">
+        <button class="tab-btn active" data-section="vocab">文字・語彙</button>
+        <button class="tab-btn" data-section="grammar">文法・読解</button>
+        <button class="tab-btn" data-section="listening">聴解</button>
+      </div>
+    </div>
+    <div class="progress-bar-container">
+      <div id="progress-fill" class="progress-bar-fill" style="width:0%"></div>
+    </div>
+  </div>
+
+  <!-- ==================== PANEL: VOCABULARY ==================== -->
+  <div id="panel-vocab" class="section-panel active">
+    <div class="exam-content">
+      <div class="section-header">
+        <h2>言語知識（文字・語彙）</h2>
+        <p class="section-sub">Kiến thức ngôn ngữ — Hán tự & Từ vựng</p>
+      </div>
+
+      <!-- もんだい1: 漢字の読み方 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい１</div>
+        <p class="mondai-desc">＿＿のことばは ひらがなで どう かきますか。1・2・3・4から いちばん いい ものを ひとつ えらんでください。</p>
+
+        <div class="question-card" data-qid="vocab-m1-1">
+          <div class="question-text"><span class="question-number">1</span><span class="underline">来月</span>　国へ　かえります。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m1-1" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">らいげつ</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-1" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">らいがつ</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-1" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">きげつ</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-1" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">きがつ</span></label>
+          </div>
+          <div class="explanation" data-explain="「来月」đọc là 「らいげつ」. 来 = らい (tới), 月 = げつ (tháng)."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m1-2">
+          <div class="question-text"><span class="question-number">2</span>あそこに　いるのは　リーさんの　<span class="underline">お父さん</span>　です。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m1-2" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">おにいさん</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-2" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">おかあさん</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-2" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">おじいさん</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-2" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">おとうさん</span></label>
+          </div>
+          <div class="explanation" data-explain="「お父さん」đọc là 「おとうさん」= bố/cha. 父 = ちち/とう."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m1-3">
+          <div class="question-text"><span class="question-number">3</span>がくせいが　<span class="underline">百人</span>　います。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m1-3" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">ひゃくじん</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-3" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">びゃくにん</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-3" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">ひゃくにん</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-3" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">ひゃっにん</span></label>
+          </div>
+          <div class="explanation" data-explain="「百人」đọc là 「ひゃくにん」= 100 người. 百 = ひゃく, 人 = にん (đếm người)."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m1-4">
+          <div class="question-text"><span class="question-number">4</span>あそこに　やまださんが　<span class="underline">立って</span>　います。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m1-4" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">のって</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-4" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">たって</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-4" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">もって</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-4" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">まって</span></label>
+          </div>
+          <div class="explanation" data-explain="「立って」đọc là 「たって」= đứng. 立つ（たつ）= đứng."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m1-5">
+          <div class="question-text"><span class="question-number">5</span>ぜんぶで　<span class="underline">五分</span>　くらい　あります。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m1-5" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">ごぶん</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-5" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">ごっぷん</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-5" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">ごふん</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-5" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">ごぷん</span></label>
+          </div>
+          <div class="explanation" data-explain="「五分」đọc là 「ごふん」= 5 phút. 五 = ご, 分 = ふん."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m1-6">
+          <div class="question-text"><span class="question-number">6</span>きょうは　くるまが　<span class="underline">少ない</span>　ですね。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m1-6" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">すくない</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-6" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">すこない</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-6" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">ちいさない</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-6" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">みじかない</span></label>
+          </div>
+          <div class="explanation" data-explain="「少ない」đọc là 「すくない」= ít. 少 = すく（ない）/ すこ（し）."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m1-7">
+          <div class="question-text"><span class="question-number">7</span>すぐ　そとに　<span class="underline">出て</span>　ください。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m1-7" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">きて</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-7" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">でて</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-7" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">みて</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m1-7" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">して</span></label>
+          </div>
+          <div class="explanation" data-explain="「出て」đọc là 「でて」= ra ngoài. 出る（でる）= đi ra."></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- もんだい2: 表記 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい２</div>
+        <p class="mondai-desc">＿＿のことばは どう かきますか。1・2・3・4から いちばん いい ものを ひとつ えらんでください。</p>
+
+        <div class="question-card" data-qid="vocab-m2-8">
+          <div class="question-text"><span class="question-number">8</span>ここに　<span class="underline">でんわばんごう</span>を　かいてください。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m2-8" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">伝話番号</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-8" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">電詁番号</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-8" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">電話番号</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-8" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">伝詁番号</span></label>
+          </div>
+          <div class="explanation" data-explain="「でんわばんごう」viết bằng Hán tự là「電話番号」= số điện thoại."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m2-9">
+          <div class="question-text"><span class="question-number">9</span>おとうとは　<span class="underline">せ</span>が　たかいです。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m2-9" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">背</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-9" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">肩</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-9" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">首</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-9" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">腰</span></label>
+          </div>
+          <div class="explanation" data-explain="「せ」= 背 (chiều cao/lưng). 背が高い = cao (người)."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m2-10">
+          <div class="question-text"><span class="question-number">10</span>まいにち　<span class="underline">はし</span>って　います。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m2-10" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">歩って</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-10" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">起って</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-10" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">足って</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-10" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">走って</span></label>
+          </div>
+          <div class="explanation" data-explain="「はしって」= 走って (chạy). 走る（はしる）= chạy."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m2-11">
+          <div class="question-text"><span class="question-number">11</span>あの　<span class="underline">はし</span>を　わたります。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m2-11" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">道</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-11" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">橋</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-11" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">階</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-11" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">坂</span></label>
+          </div>
+          <div class="explanation" data-explain="「はし」= 橋 (cầu). はしを わたる = đi qua cầu."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m2-12">
+          <div class="question-text"><span class="question-number">12</span><span class="underline">ゆうべ</span>は　11じに　ねました。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m2-12" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">今夜</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-12" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">今朝</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-12" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">昨夜</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m2-12" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">昨朝</span></label>
+          </div>
+          <div class="explanation" data-explain="「ゆうべ」= 昨夜 (tối qua). Dùng thì quá khứ「ねました」nên là tối hôm qua."></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- もんだい3: 文脈規定 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい３</div>
+        <p class="mondai-desc">（　　）に なにを いれますか。1・2・3・4から いちばん いい ものを ひとつ えらんでください。</p>
+
+        <div class="question-card" data-qid="vocab-m3-13">
+          <div class="question-text"><span class="question-number">13</span>コーヒーに　さとうを（　　）いれます。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m3-13" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">ほそく</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-13" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">すこし</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-13" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">すこく</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-13" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">ほそい</span></label>
+          </div>
+          <div class="explanation" data-explain="「すこし」= một chút. Cho một chút đường vào cà phê."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m3-14">
+          <div class="question-text"><span class="question-number">14</span>えきの（　　）に　ゆうびんきょくが　あります。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m3-14" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">うしろ</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-14" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">した</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-14" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">うえ</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-14" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">となり</span></label>
+          </div>
+          <div class="explanation" data-explain="「となり」= bên cạnh. Bưu điện ở bên cạnh ga."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m3-15">
+          <div class="question-text"><span class="question-number">15</span>「あしたは　なんようび　ですか。」「（　　）です。」</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m3-15" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">もくようび</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-15" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">こんしゅう</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-15" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">あさって</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-15" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">まいにち</span></label>
+          </div>
+          <div class="explanation" data-explain="Hỏi ngày mai là thứ mấy → trả lời bằng thứ: もくようび (thứ Năm)."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m3-16">
+          <div class="question-text"><span class="question-number">16</span>テストは（　　）でしたか。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m3-16" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">おもい</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-16" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">おおい</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-16" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">むずかしい</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-16" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">ながい</span></label>
+          </div>
+          <div class="explanation" data-explain="「むずかしい」= khó. Bài kiểm tra có khó không?"></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m3-17">
+          <div class="question-text"><span class="question-number">17</span>わたしの　うちは　えきから（　　）。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m3-17" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">ちかいです</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-17" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">ひくいです</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-17" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">せまいです</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-17" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">みじかいです</span></label>
+          </div>
+          <div class="explanation" data-explain="「ちかい」= gần. えきから ちかい = gần ga."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m3-18">
+          <div class="question-text"><span class="question-number">18</span>おかあさんは（　　）で　やさいを　きっています。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m3-18" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">さら</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-18" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">はし</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-18" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">ちゃわん</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m3-18" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">ほうちょう</span></label>
+          </div>
+          <div class="explanation" data-explain="「ほうちょう」= dao bếp (包丁). Dùng dao để cắt rau."></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- もんだい4: 言い換え -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい４</div>
+        <p class="mondai-desc">＿＿の ぶんと だいたい おなじ いみの ぶんが あります。1・2・3・4から いちばん いい ものを ひとつ えらんでください。</p>
+
+        <div class="question-card" data-qid="vocab-m4-19">
+          <div class="question-text"><span class="question-number">19</span>としょかんは　きょうは　<span class="underline">やすみ</span>です。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m4-19" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">としょかんは きょうは しまっています。</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m4-19" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">としょかんは きょうは あいています。</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m4-19" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">としょかんは きょうは おわっています。</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m4-19" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">としょかんは きょうは はじまっています。</span></label>
+          </div>
+          <div class="explanation" data-explain="「やすみ」= nghỉ → thư viện đóng cửa = しまっています. Đáp án theo đáp án chính thức là ②."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m4-20">
+          <div class="question-text"><span class="question-number">20</span>この　へやは　<span class="underline">あかるい</span>です。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m4-20" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">この へやは あたたかいです。</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m4-20" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">この へやは くらいです。</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m4-20" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">この へやには ひかりが たくさん あります。</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m4-20" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">この へやには まどが ありません。</span></label>
+          </div>
+          <div class="explanation" data-explain="「あかるい」= sáng → phòng có nhiều ánh sáng = ひかりが たくさん あります."></div>
+        </div>
+
+        <div class="question-card" data-qid="vocab-m4-21">
+          <div class="question-text"><span class="question-number">21</span>やまださんは　かいしゃに　<span class="underline">つとめて</span>　います。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="vocab-m4-21" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">やまださんは かいしゃで あそんでいます。</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m4-21" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">やまださんは かいしゃで べんきょうしています。</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m4-21" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">やまださんは かいしゃで やすんでいます。</span></label>
+            <label class="option-label"><input type="radio" name="vocab-m4-21" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">やまださんは かいしゃで はたらいています。</span></label>
+          </div>
+          <div class="explanation" data-explain="「つとめる」= làm việc tại → はたらく = làm việc."></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PANEL: GRAMMAR & READING ==================== -->
+  <div id="panel-grammar" class="section-panel">
+    <div class="exam-content">
+      <div class="section-header">
+        <h2>言語知識（文法）・読解</h2>
+        <p class="section-sub">Kiến thức ngôn ngữ — Ngữ pháp & Đọc hiểu</p>
+      </div>
+
+      <!-- もんだい1: 文の文法1 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい１</div>
+        <p class="mondai-desc">（　　）に なにを いれますか。1・2・3・4から いちばん いい ものを ひとつ えらんでください。</p>
+
+        <div class="question-card" data-qid="gram-m1-1">
+          <div class="question-text"><span class="question-number">1</span>きのうの　パーティー（　　）たのしかったです。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m1-1" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">を</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-1" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">は</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-1" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">に</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-1" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">で</span></label>
+          </div>
+          <div class="explanation" data-explain="Trợ từ「は」dùng để nêu chủ đề câu. Bữa tiệc hôm qua THÌ vui."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m1-2">
+          <div class="question-text"><span class="question-number">2</span>この　ケーキは　たなかさん（　　）つくりました。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m1-2" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">を</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-2" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">に</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-2" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">で</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-2" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">が</span></label>
+          </div>
+          <div class="explanation" data-explain="「が」chỉ chủ ngữ hành động. Bánh này Tanaka LÀ NGƯỜI ĐÃ làm."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m1-3">
+          <div class="question-text"><span class="question-number">3</span>まど（　　）あけても　いいですか。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m1-3" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">が</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-3" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">を</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-3" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">に</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-3" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">は</span></label>
+          </div>
+          <div class="explanation" data-explain="「を」dùng với tha động từ あける (mở). Mở CỬA SỔ có được không?"></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m1-4">
+          <div class="question-text"><span class="question-number">4</span>もう　しゅくだいを（　　）。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m1-4" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">します</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-4" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">しました</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-4" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">しません</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-4" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">しませんでした</span></label>
+          </div>
+          <div class="explanation" data-explain="「もう」+ thì quá khứ = đã...rồi. もう しました = đã làm rồi."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m1-5">
+          <div class="question-text"><span class="question-number">5</span>A:「にちようびに　なにを　しますか。」B:「ともだちと　えいがを（　　）。」</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m1-5" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">みにいきます</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-5" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">みにきます</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-5" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">みていきます</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-5" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">みてきます</span></label>
+          </div>
+          <div class="explanation" data-explain="V ます形 + に いきます = đi để làm gì. えいがを みに いきます = đi xem phim."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m1-6">
+          <div class="question-text"><span class="question-number">6</span>わたしは　まいあさ　こうえんを（　　）。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m1-6" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">さんぽします</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-6" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">さんぽでした</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-6" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">さんぽしています</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-6" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">さんぽするでした</span></label>
+          </div>
+          <div class="explanation" data-explain="「まいあさ」(mỗi sáng) → hành động lặp đi lặp lại → Vています."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m1-7">
+          <div class="question-text"><span class="question-number">7</span>A:「その　えいがは　どうでしたか。」B:「（　　）おもしろかったです。」</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m1-7" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">あまり</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-7" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">ぜんぜん</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-7" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">とても</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-7" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">まだ</span></label>
+          </div>
+          <div class="explanation" data-explain="「とても」= rất. Kết hợp với câu khẳng định おもしろかった (hay)."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m1-8">
+          <div class="question-text"><span class="question-number">8</span>ゆうびんきょくは　ぎんこうの（　　）あります。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m1-8" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">まえ</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-8" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">まえに</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-8" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">まえの</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-8" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">まえで</span></label>
+          </div>
+          <div class="explanation" data-explain="Nの まえに あります = ở phía trước N. Cần trợ từ「に」chỉ vị trí."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m1-9">
+          <div class="question-text"><span class="question-number">9</span>A:「にほんごが　じょうずですね。」B:「いいえ、（　　）。」</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m1-9" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">そうですね</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-9" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">じょうずです</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-9" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">じょうずじゃないです</span></label>
+            <label class="option-label"><input type="radio" name="gram-m1-9" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">まだまだです</span></label>
+          </div>
+          <div class="explanation" data-explain="「まだまだです」= vẫn còn kém lắm. Cách khiêm nhường khi được khen."></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- もんだい2: 文の文法2 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい２</div>
+        <p class="mondai-desc">★に 入る ものは どれですか。1・2・3・4から いちばん いい ものを ひとつ えらんでください。</p>
+
+        <div class="question-card" data-qid="gram-m2-10">
+          <div class="question-text"><span class="question-number">10</span>きのう ＿＿ ＿＿ <span style="color:var(--warning);font-weight:bold">★</span> ＿＿ いきました。<br>
+          <span style="color:var(--text-muted);font-size:0.85rem">1. デパートへ　2. かいものに　3. ともだちと　4. いっしょに</span></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m2-10" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-10" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-10" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-10" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="Thứ tự: ともだちと(3) いっしょに(4) デパートへ(1) かいものに(2) いきました. ★ = 1(デパートへ). Đáp án: 1."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m2-11">
+          <div class="question-text"><span class="question-number">11</span>この　もんだいは ＿＿ <span style="color:var(--warning);font-weight:bold">★</span> ＿＿ ＿＿ わかりません。<br>
+          <span style="color:var(--text-muted);font-size:0.85rem">1. だれも　2. むずかしくて　3. が　4. こたえ</span></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m2-11" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-11" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-11" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-11" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="Thứ tự: むずかしくて(2) だれも(1) こたえ(4) が(3) わかりません. ★ = 1(だれも). Đáp án: 1."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m2-12">
+          <div class="question-text"><span class="question-number">12</span>おきなわは ＿＿ ＿＿ <span style="color:var(--warning);font-weight:bold">★</span> ＿＿ です。<br>
+          <span style="color:var(--text-muted);font-size:0.85rem">1. きれいな　2. うみが　3. ところ　4. ある</span></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m2-12" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-12" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-12" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-12" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="Thứ tự: きれいな(1) うみが(2) ある(4) ところ(3) です. ★ = 4(ある). Đáp án: 4."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m2-13">
+          <div class="question-text"><span class="question-number">13</span>わたしの　くには ＿＿ <span style="color:var(--warning);font-weight:bold">★</span> ＿＿ ＿＿ ところです。<br>
+          <span style="color:var(--text-muted);font-size:0.85rem">1. あつく　2. なつは　3. ない　4. あまり</span></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m2-13" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-13" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-13" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="gram-m2-13" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="Thứ tự: なつは(2) あまり(4) あつく(1) ない(3) ところです. ★ = 4(あまり). Đáp án: 4."></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- もんだい3: テキスト文法 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい３</div>
+        <p class="mondai-desc">つぎの ぶんしょうを よんで、しつもんに こたえてください。</p>
+
+        <div class="reading-passage">
+          わたしは　先月から　日本語の　学校に　かよって　います。学校は　月曜日から　金曜日<span class="bracket">（ 14 ）</span>あります。毎日　あさ　9時から　ごご　3時まで　べんきょうします。クラスには　15人の　がくせいが　います。いろいろな　国の　人が　います。先生は　やさしくて<span class="bracket">（ 15 ）</span>です。日本語は　<span class="bracket">（ 16 ）</span>おもしろいです。毎日　<span class="bracket">（ 17 ）</span>べんきょうしたいです。
+        </div>
+
+        <div class="question-card" data-qid="gram-m3-14">
+          <div class="question-text"><span class="question-number">14</span>（ 14 ）に入るものは？</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m3-14" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">から</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-14" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">でも</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-14" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">しか</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-14" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">まで</span></label>
+          </div>
+          <div class="explanation" data-explain="「から～まで」= từ...đến. 月曜日から 金曜日まで = từ thứ 2 đến thứ 6."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m3-15">
+          <div class="question-text"><span class="question-number">15</span>（ 15 ）に入るものは？</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m3-15" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">こわい</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-15" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">つまらない</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-15" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">おもしろい</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-15" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">きびしい</span></label>
+          </div>
+          <div class="explanation" data-explain="やさしくて + tính từ tích cực → おもしろい. Thầy/Cô tốt bụng và thú vị."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m3-16">
+          <div class="question-text"><span class="question-number">16</span>（ 16 ）に入るものは？</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m3-16" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">むずかしいですが</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-16" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">やさしいですが</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-16" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">つまらないですが</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-16" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">おもしろいですが</span></label>
+          </div>
+          <div class="explanation" data-explain="「むずかしいですが おもしろいです」= khó nhưng mà thú vị. ですが = nhưng."></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m3-17">
+          <div class="question-text"><span class="question-number">17</span>（ 17 ）に入るものは？</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m3-17" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">もっと</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-17" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">もう</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-17" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">まだ</span></label>
+            <label class="option-label"><input type="radio" name="gram-m3-17" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">また</span></label>
+          </div>
+          <div class="explanation" data-explain="「もっと」= nhiều hơn. Muốn học NHIỀU HƠN mỗi ngày."></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- もんだい4: 読解 短文 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい４</div>
+        <p class="mondai-desc">つぎの ぶんしょうを よんで、しつもんに こたえてください。こたえは、1・2・3・4 から いちばん いい ものを ひとつ えらんで ください。</p>
+
+        <div class="reading-passage">
+          (1)<br>
+          10年前は、えきの ちかくに 小さい みせが たくさん あって、みんなは 小さい店で かいものを しました。今は えきの ちかくに みせが あまり ありませんから、えきから とおくて 大きい みせで かいものを します。
+        </div>
+
+        <div class="question-card" data-qid="gram-m4-18">
+          <div class="question-text"><span class="question-number">18</span>10年前、みんなは どこで かいものを しましたか。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m4-18" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">えきの ちかくの 大きい みせ</span></label>
+            <label class="option-label"><input type="radio" name="gram-m4-18" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">えきの ちかくの 小さい みせ</span></label>
+            <label class="option-label"><input type="radio" name="gram-m4-18" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">えきから とおくて 大きい みせ</span></label>
+            <label class="option-label"><input type="radio" name="gram-m4-18" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">えきから とおくて 小さい みせ</span></label>
+          </div>
+          <div class="explanation" data-explain="Đoạn văn viết: 10年前は... みんなは 小さい店で かいものを しました (10 năm trước, mọi người mua sắm ở cửa hàng nhỏ gần ga). Đáp án: 2"></div>
+        </div>
+
+        <div class="reading-passage">
+          (2)<br>
+          これは ユンさんが クラスメートの ダニエラさんに 書いた メールです。<br><br>
+          ダニエラさん<br>
+          きのうの よるから あたまが とても いたいです。いまから びょういんに いきますから、ごぜんの クラスは やすみます。ごごから がっこうに いきます。<br>
+          すみませんが、かわぐちせんせいに いって ください。<br>
+          ユン
+        </div>
+
+        <div class="question-card" data-qid="gram-m4-19">
+          <div class="question-text"><span class="question-number">19</span>ダニエラさんは かわぐちせんせいに 何と いいますか。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m4-19" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">「ユンさんは びょういんに いきますから、きょう がっこうを やすみます。」</span></label>
+            <label class="option-label"><input type="radio" name="gram-m4-19" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">「ユンさんは びょういんに いって、ごごから がっこうに きます。」</span></label>
+            <label class="option-label"><input type="radio" name="gram-m4-19" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">「ユンさんは ごご びょういんに いって、それから がっこうに きます。」</span></label>
+            <label class="option-label"><input type="radio" name="gram-m4-19" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">「ユンさんは びょういんに いってから、ごぜんの クラスに きます。」</span></label>
+          </div>
+          <div class="explanation" data-explain="Yun nhắn: Đi viện nên nghỉ lớp buổi sáng, chiều sẽ đến trường. Vậy Daniela sẽ nói: Yun đi viện rồi chiều sẽ đến. Đáp án: 2"></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- もんだい5: 読解 中文 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい５</div>
+        <p class="mondai-desc">つぎの ぶんしょうを よんで、しつもんに こたえて ください。こたえは、1・2・3・4 から いちばん いい ものを ひとつ えらんで ください。</p>
+        <div class="reading-passage">
+          せんしゅう きょうとへ 一人で りょこうに 行きました。<br>
+          ホテルは きょうとえきの まえに ある 大きな ホテルでした。私は へやに にもつを おいて、小さな かばんに さいふや パスポートを いれて、ゆうめいな にわを 見に 行きました。ホテルから にわまで タクシーに のりました。いけには さかなが およいで いて、さくらが きれいでした。<br>
+          それから、きょうとの まちを あるいて ざっしで みた おかしを かいに いきました。みせで かばんから さいふを だしましたが、かばんには パスポートが ありませんでした。<br>
+          わたしは すぐに ホテルに かえりました。<br>
+          パスポートは ホテルに ありました。とても うれしかったです。ホテルの 人が「タクシーがいしゃの ひとが もって きましたよ。」と いいました。<br>
+          きょうとは いいまち でした。
+        </div>
+
+        <div class="question-card" data-qid="gram-m5-20">
+          <div class="question-text"><span class="question-number">20</span>「わたし」は ホテルを でた あとで、はじめに なにを しましたか。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m5-20" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">あるいて きょうとえきに いきました。</span></label>
+            <label class="option-label"><input type="radio" name="gram-m5-20" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">タクシーで きょうとえきに いきました。</span></label>
+            <label class="option-label"><input type="radio" name="gram-m5-20" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">あるいて ゆうめいな にわを みに いきました</span></label>
+            <label class="option-label"><input type="radio" name="gram-m5-20" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">タクシーで ゆうめいな にわを みに いきました</span></label>
+          </div>
+          <div class="explanation" data-explain="Đoạn văn viết: ホテルから にわまで タクシーに のりました (Từ khách sạn lên taxi đến khu vườn). Đáp án: 4"></div>
+        </div>
+
+        <div class="question-card" data-qid="gram-m5-21">
+          <div class="question-text"><span class="question-number">21</span>どうして とても うれしかったですか。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m5-21" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">はじめて 一人で タクシーに のったから</span></label>
+            <label class="option-label"><input type="radio" name="gram-m5-21" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">ホテルの ひとの にほんごが わかったから</span></label>
+            <label class="option-label"><input type="radio" name="gram-m5-21" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">パスポートが ホテルに あったから</span></label>
+            <label class="option-label"><input type="radio" name="gram-m5-21" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">とても きれいで いい ホテルだったから</span></label>
+          </div>
+          <div class="explanation" data-explain="Tác giả vui vì: パスポートは ホテルに ありました。とても うれしかったです (Hộ chiếu có ở khách sạn. Rất vui). Đáp án: 3"></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- もんだい6: 情報検索 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい６</div>
+        <p class="mondai-desc">みぎの ページを 見て、下の しつもんに こたえて ください。こたえは、1・2・3・4 から いちばん いい ものを 一つ えらんで ください。</p>
+        <div class="reading-passage">
+          <div style="text-align:center;font-weight:bold;font-size:1.1rem;margin-bottom:0.8rem">ケーキ屋「マロン」</div>
+          <div style="text-align:center;">たかやま町 235-8 電話: 013-579-2468<br>休み: 日よう日</div>
+          <div style="text-align:center; margin-bottom:1rem;">こんしゅう(9月7日〜9月12日)の やすい もの</div>
+          
+          <table style="width:100%; border-collapse: collapse; text-align:center;" border="1">
+            <tr style="background:var(--surface-color);">
+              <td style="padding:8px;">7日(月)</td>
+              <td style="padding:8px;">8日(火)</td>
+              <td style="padding:8px;">9日(水)</td>
+            </tr>
+            <tr>
+              <td style="padding:8px;">いちごのケーキ</td>
+              <td style="padding:8px;">チョコレートのケーキ</td>
+              <td style="padding:8px;">バナナのケーキ</td>
+            </tr>
+            <tr style="font-weight:bold;">
+              <td style="padding:8px;">450円 → 350円</td>
+              <td style="padding:8px;">400円 → 300円</td>
+              <td style="padding:8px;">350円 → 250円</td>
+            </tr>
+            <tr style="background:var(--surface-color);">
+              <td style="padding:8px;">10日(木)</td>
+              <td style="padding:8px;">11日(金)</td>
+              <td style="padding:8px;">12日(土)</td>
+            </tr>
+            <tr>
+              <td style="padding:8px;">いちごのケーキ</td>
+              <td style="padding:8px;">チョコレートのケーキ</td>
+              <td style="padding:8px;">バナナのケーキ</td>
+            </tr>
+            <tr style="font-weight:bold;">
+              <td style="padding:8px;">450円 → 350円</td>
+              <td style="padding:8px;">400円 → 300円</td>
+              <td style="padding:8px;">350円 → 250円</td>
+            </tr>
+          </table>
+          <br>
+          まいしゅう、水よう日・木よう日・金よう日は クッキーも やすいです。ぜんぶ 100円です。
+        </div>
+
+        <div class="question-card" data-qid="gram-m6-22">
+          <div class="question-text"><span class="question-number">22</span>テオさんは、バナナの ケーキが やすい 日に みせに いきたいです。クッキーも やすい 日が いいです。いつ いきますか。</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="gram-m6-22" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">9日(水)</span></label>
+            <label class="option-label"><input type="radio" name="gram-m6-22" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">9日(水)か 10日(木)か 11日(金)</span></label>
+            <label class="option-label"><input type="radio" name="gram-m6-22" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">9日(水)か 12日(土)</span></label>
+            <label class="option-label"><input type="radio" name="gram-m6-22" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">12日(土)</span></label>
+          </div>
+          <div class="explanation" data-explain="Bánh chuối rẻ vào Thứ 4 (9/9) và Thứ 7 (12/9). Cookie rẻ vào T4, T5, T6. Vậy ngày thỏa mãn cả 2 điều kiện là Thứ 4 (9/9). Đáp án: 1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PANEL: LISTENING ==================== -->
+  <div id="panel-listening" class="section-panel">
+    <div class="exam-content">
+      <div class="section-header">
+        <h2>聴解（ちょうかい）</h2>
+        <p class="section-sub">Nghe hiểu — Listening Comprehension</p>
+      </div>
+
+      <div class="audio-player-container">
+        <h3>🎧 Audio bài nghe</h3>
+        <audio controls preload="metadata">
+          <source src="Nghe N5 T12-2021 bản chuẩn Yuuki Bùi.mp3" type="audio/mpeg">
+          Trình duyệt không hỗ trợ audio.
+        </audio>
+      </div>
+
+      <!-- もんだい1: 課題理解 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい１ — 課題理解</div>
+        <p class="mondai-desc">もんだい1では、はじめに しつもんを きいてください。それから はなしを きいて、もんだいようしの 1から4の なかから、いちばん いい ものを ひとつ えらんでください。</p>
+
+        <div class="question-card" data-qid="listen-m1-1">
+          <div class="question-text"><span class="question-number">1</span>もんだい1 - 1ばん</div>
+          <div class="listening-image"><img src="mondai 1 câu 1.png" alt="Câu 1 - Nấu ăn"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m1-1" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-1" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-1" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-1" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>１、男の学生はこの後すぐ何をしますか<br>先生「では、これからカレーを作りましょう。」<br>学生「先生、私は野菜を切りましょうか。」<br>先生「いいえ、野菜じゃなくて、肉を切ってください。」<br>学生「はい。」<br><br>【Giải thích】Câu hỏi: Nam sinh sau đây sẽ làm gì ngay?<br>Giáo viên bảo học sinh cắt thịt (肉) chứ không phải rau (野菜). Chọn đáp án 3."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m1-2">
+          <div class="question-text"><span class="question-number">2</span>もんだい1 - 2ばん</div>
+          <div class="listening-image"><img src="mondai 1 câu 2.png" alt="Câu 2 - Người"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m1-2" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-2" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-2" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-2" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>２、店の男の人は誰に手袋を渡しますか<br>女「あ、この手袋は今店を出た女の人のですね。」<br>男「ああ、四人のグループですね。あそこにいますよ。」<br>女「すぐ持って行って、渡してください。あの髪が短くて、メガネをかけている人のです。」<br>男「分かりました。」<br><br>【Giải thích】Câu hỏi: Nam nhân viên cửa hàng đưa găng tay cho ai?<br>Người phụ nữ có tóc ngắn (髪が短くて) và đeo kính (メガネをかけている). Chọn đáp án 4."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m1-3">
+          <div class="question-text"><span class="question-number">3</span>もんだい1 - 3ばん</div>
+          <div class="listening-image"><img src="mondai 1 câu 3.png" alt="Câu 3 - Đồ vật trong phòng"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m1-3" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-3" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-3" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-3" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>３、男の子は荷物をどこに置きますか<br>男の子「お母さん、荷物来たよ、どこに置く？テーブルの上でいい？」<br>母「それ食べ物よ。テーブルの上じゃなくて、冷蔵庫に入れて。」<br>男の子「お母さん、冷蔵庫、いっぱいだよ。」<br>母「じゃ、冷蔵庫の横の椅子に置いて。」<br>男の子「はーい。」<br><br>【Giải thích】Câu hỏi: Bé trai sẽ đặt hành lý ở đâu?<br>Tủ lạnh đầy nên mẹ bảo để lên ghế cạnh tủ lạnh (冷蔵庫の横の椅子に置いて). Chọn đáp án 1."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m1-4">
+          <div class="question-text"><span class="question-number">4</span>もんだい1 - 4ばん</div>
+          <div class="listening-image"><img src="mondai 1 câu 4.png" alt="Câu 4 - Quán cà phê"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m1-4" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-4" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-4" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-4" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>４、女の人はこの後どこへ行きますか<br>女「もしもし、今駅に着きました。」<br>男「そうですか、僕は喫茶店にいます。」<br>女「ああ、駅の隣の喫茶店ですね。」<br>男「いいえ、大学の前の喫茶店です。」<br>女「ああ、分かりました、すぐ行きます。」<br><br>【Giải thích】Câu hỏi: Người phụ nữ sau đây đi đâu?<br>Người nam đang ở quán nước trước trường đại học (大学の前の喫茶店). Chọn đáp án 4."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m1-5">
+          <div class="question-text"><span class="question-number">5</span>もんだい1 - 5ばん</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m1-5" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">101 きょうしつ</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-5" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">102 きょうしつ</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-5" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">201 きょうしつ</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-5" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">202 きょうしつ</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>５、学生はどこで新しい教科書を買いますか<br>先生「皆さん、今日授業の後、この新しい教科書を買って、次の授業の時に持って来てください。教科書の名前は日本語２です。教科書は明日まで、一階の１０１で売っています。この教室は２階の２０１ですから、丁度この下の教室ですね。」<br><br>【Giải thích】Câu hỏi: Học sinh mua sách giáo khoa mới ở đâu?<br>Sách bán ở phòng 101 tầng 1 (一階の１０１で売っています). Chọn đáp án 1."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m1-6">
+          <div class="question-text"><span class="question-number">6</span>もんだい1 - 6ばん</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m1-6" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">あか</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-6" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">きいろ</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-6" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">あお</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-6" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">くろ</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>６、女の学生は男の学生に何色の帽子をあげますか<br>男「あんさんのその赤い帽子、いいね。」<br>女「これは私が作った帽子だよ。」<br>男「上手だね。」<br>女「他の色で同じものを三つ作ったから、どれかあげる。」<br>男「え？本当？ありがとう。」<br>女「黄色の帽子と、青と、それから、黒があるよ。どれがいい？」<br>男「それじゃあ、黒と青の帽子は持っているから、黄色がいい。」<br>女「分かった。」<br><br>【Giải thích】Câu hỏi: Nữ sinh sẽ cho nam sinh chiếc mũ màu gì?<br>Người nam đã có mũ đen và xanh, nên chọn mũ màu vàng (黄色がいい). Chọn đáp án 2."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m1-7">
+          <div class="question-text"><span class="question-number">7</span>もんだい1 - 7ばん</div>
+          <div class="listening-image"><img src="mondai 1 câu 7.png" alt="Câu 7 - Đồ mang theo"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m1-7" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">ア　イ</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-7" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">ア　ウ</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-7" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">イ　ウ</span></label>
+            <label class="option-label"><input type="radio" name="listen-m1-7" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">ア　イ　ウ</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>７、学生は山に何を持って行きますか。<br>先生「明日は東山に行きます。學校の前のバス停から山までバスで行きます。バスの切符は５００円ですが、山に登って、またバスで帰りますから、千円持ってきてください。山の上は少し寒いですから、上着も忘れないでくださいね。皆一緒に歩きますから、山の地図は私が持って行きます。」<br><br>【Giải thích】Câu hỏi: Học sinh mang theo những gì lên núi?<br>Cần mang theo 1000 yên (千円 - tiền) và áo khoác (上着 - áo). Chọn đáp án 1."></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- もんだい2: ポイント理解 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい２ — ポイント理解</div>
+        <p class="mondai-desc">もんだい2では、はじめに しつもんを きいてください。そのあとで、もんだいようしを みてください。よんでから きいてください。</p>
+
+        <div class="question-card" data-qid="listen-m2-1">
+          <div class="question-text"><span class="question-number">1</span>もんだい2 - 1ばん</div>
+          <div class="listening-image"><img src="mondai 2 câu 1.png" alt="Hoạt động"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m2-1" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-1" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-1" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-1" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>１、男の留学生は金曜日何をしていますか<br>女「日本はどうですか。」<br>男「はい、とても楽しいです。」<br>女「毎日大学に行きますか。」<br>男「いいえ、月曜日から木曜日まで大学に行って、金曜日は近くの図書館で勉強します。」<br>女「土曜日や日曜日はどうしていますか。」<br>男「掃除をしたり、友達と会ったりしています。」<br>女「そうですか。」<br><br>【Giải thích】Câu hỏi: Du học sinh nam làm gì vào ngày thứ 6?<br>Nam nói: 金曜日は近くの図書館で勉強します (Thứ 6 học ở thư viện gần đó). Chọn đáp án 2."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m2-2">
+          <div class="question-text"><span class="question-number">2</span>もんだい2 - 2ばん</div>
+          <div class="listening-image"><img src="mondai 2 câu 2.png" alt="Một ngày"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m2-2" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-2" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-2" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-2" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>２、女の人は今から何をしますか。<br>男「仕事は終わりましたか。」<br>女「はい。」<br>男「じゃあ、一緒に晩ご飯を食べに行きませんか。」<br>女「あ、ごめんなさい。ちょっと頭が痛いですから、今日はもう家に帰ります。」<br>男「そう、じゃ、また。」<br><br>【Giải thích】Câu hỏi: Người phụ nữ bây giờ sẽ làm gì?<br>Người nữ bị đau đầu (頭が痛い) nên sẽ đi về nhà (家に帰ります). Chọn đáp án 4."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m2-3">
+          <div class="question-text"><span class="question-number">3</span>もんだい2 - 3ばん</div>
+          <div class="listening-image"><img src="mondai 2 câu 3.png" alt="Lịch tháng 3"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m2-3" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-3" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-3" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-3" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>３、男の留学生はいつ国へ帰りますか。<br>女「林さん、いつ国へ帰りますか。」<br>男「今日は三月四日ですから、ちょうど二週間後です。」<br>女「そうですか。再来週の金曜ですね。」<br>男「はい。」<br><br>【Giải thích】Câu hỏi: Du học sinh nam bao giờ về nước?<br>Hôm nay mùng 4. Về nước sau đúng 2 tuần (ちょうど二週間後です). Tức là ngày 18. Chọn đáp án 4."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m2-4">
+          <div class="question-text"><span class="question-number">4</span>もんだい2 - 4ばん</div>
+          <div class="listening-image"><img src="mondai 2 câu 6.png" alt="Thể thao"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m2-4" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-4" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-4" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-4" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>４、男の留学生が毎日しているスポーツは何ですか。<br>男「僕はスポーツが大好きです。授業の前に毎朝友達とバスケットボールの練習をしています。時々大学のプールで泳いだり、テニスをしたりしています。サッカーはあまりしませんが、毎日見ています。」<br><br>【Giải thích】Câu hỏi: Môn thể thao du học sinh nam chơi mỗi ngày là gì?<br>Mỗi sáng trước giờ học tập bóng rổ (バスケットボールの練習をしています). Chọn đáp án 1."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m2-5">
+          <div class="question-text"><span class="question-number">5</span>もんだい2 - 5ばん</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m2-5" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">5がつ 28にち</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-5" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">5がつ 29にち</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-5" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">5がつ 30にち</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-5" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">5がつ 31にち</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>５、女の学生の誕生日は何月何日ですか。<br>男「山本さん、今日は五月二十九日、山本さんの誕生日ですね。これ、プレゼントです。どうぞ。」<br>女「綺麗な花ですね。ありがとうございます。でも、誕生日はまだです。一日早いですよ。」<br>男「え？すみません。」<br><br>【Giải thích】Câu hỏi: Sinh nhật của nữ sinh là ngày tháng nào?<br>Hôm nay 29/5. Sinh nhật còn sớm 1 ngày (一日早いですよ), vậy sinh nhật là ngày 30/5. Chọn đáp án 3."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m2-6">
+          <div class="question-text"><span class="question-number">6</span>もんだい2 - 6ばん</div>
+          <div class="listening-image"><img src="mondai 2 câu 4.png" alt="Ảnh phong cảnh"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m2-6" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-6" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-6" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+            <label class="option-label"><input type="radio" name="listen-m2-6" value="4"><span class="radio-custom"></span><span class="option-num">④</span><span class="option-text">4</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>６、二人はどのはがきを選びましたか。<br>女「綺麗な葉書がたくさんありますね。一つ選んで、一緒に林さんに出しましょうか。」<br>男「いいですね。花の絵、海の絵、色々ありますね。この山のはがきはどうですか。」<br>女「林さんの家は山と海は近いから、毎日見ていますよ。この橋の絵のはがきはどうですか。綺麗ですよ。」<br>男「いいですね。それを出しましょう。」<br><br>【Giải thích】Câu hỏi: 2 người đã chọn tấm bưu thiếp nào?<br>Cả hai chọn thiệp có hình cây cầu (橋の絵) để gửi vì nhà bạn kia đã gần núi và biển. Chọn đáp án 4."></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- もんだい3: 発話表現 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい３ — 発話表現</div>
+        <p class="mondai-desc">もんだい3では、えを みながら しつもんを きいてください。→の ひとは なんと いいますか。1・2・3から いちばん いい ものを ひとつ えらんでください。</p>
+
+        <div class="question-card" data-qid="listen-m3-1">
+          <div class="question-text"><span class="question-number">1</span>もんだい3 - 1ばん</div>
+          <div class="listening-image"><img src="mondai 3 câu 1.png" alt="Trạm xe buýt"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m3-1" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m3-1" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m3-1" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>１、時計を忘れました、今の時間が知りたいです、友達に何と言いますか<br>①今何時？<br>②今時間がある？<br>③今１０時だよ<br><br>【Giải thích】Tình huống: Quên đồng hồ, muốn biết giờ hiện tại thì nói gì với bạn bè.<br>Hỏi: 今何時？ (Bây giờ là mấy giờ?). Chọn đáp án 1."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m3-2">
+          <div class="question-text"><span class="question-number">2</span>もんだい3 - 2ばん</div>
+          <div class="listening-image"><img src="mondai 3 câu 2.png" alt="Vào phòng"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m3-2" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m3-2" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m3-2" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>２、先生の部屋に入ります、何と言いますか<br>①また明日<br>②失礼します<br>③どうぞ<br><br>【Giải thích】Tình huống: Vào phòng của giáo viên, nói gì?<br>Nói: 失礼します (Thất lễ, xin phép). Chọn đáp án 2."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m3-3">
+          <div class="question-text"><span class="question-number">3</span>もんだい3 - 3ばん</div>
+          <div class="listening-image"><img src="mondai 3 câu 3.png" alt="Đám cưới"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m3-3" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m3-3" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m3-3" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>３、友達が結婚します、何と言いますか<br>①いらっしゃい<br>②おめでとう<br>③ありがとう<br><br>【Giải thích】Tình huống: Bạn bè kết hôn, nói gì?<br>Chúc mừng: おめでとう (Chúc mừng). Chọn đáp án 2."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m3-4">
+          <div class="question-text"><span class="question-number">4</span>もんだい3 - 4ばん</div>
+          <div class="listening-image"><img src="mondai 3 câu 4.png" alt="Quầy vé"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m3-4" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m3-4" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m3-4" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>４、バスで京都に行きます、切符を買います、何と言いますか<br>①京都にバスで行ってください<br>②京都で切符を買ってください<br>③京都まで一枚ください<br><br>【Giải thích】Tình huống: Đi xe buýt tới Kyoto, mua vé thì nói gì?<br>Yêu cầu: 京都まで一枚ください (Cho 1 vé tới Kyoto). Chọn đáp án 3."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m3-5">
+          <div class="question-text"><span class="question-number">5</span>もんだい3 - 5ばん</div>
+          <div class="listening-image"><img src="mondai 3 câu 5.png" alt="Nhà hàng"></div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m3-5" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m3-5" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m3-5" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>５、スプーンで食べたいです、店の人に何と言いますか<br>①スプーンはいかがですか<br>②スプーンはありませんか<br>③スプーンで食べましょうか<br><br>【Giải thích】Tình huống: Muốn ăn bằng thìa, nói gì với nhân viên quán?<br>Hỏi xin: スプーンはありませんか (Có thìa không ạ?). Chọn đáp án 2."></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- もんだい4: 即時応答 -->
+      <div class="mondai-block">
+        <div class="mondai-title">もんだい４ — 即時応答</div>
+        <p class="mondai-desc">もんだい4では、ぶんを きいてください。1・2・3から いちばん いい ものを ひとつ えらんでください。もんだいようしには なにも いんさつ されていません。</p>
+
+        <div class="question-card" data-qid="listen-m4-1">
+          <div class="question-text"><span class="question-number">1</span>もんだい4 - 1ばん（音声のみ）</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m4-1" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-1" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-1" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>１．行ってきまーす<br>①お帰りなさい<br>②ただいま<br>③いってらっしゃい<br><br>【Giải thích】Câu 1: Khi có người ra khỏi nhà nói 行ってきまーす (Tôi đi đây), người ở nhà đáp lại: いってらっしゃい (Đi cẩn thận nhé). Chọn đáp án 3."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m4-2">
+          <div class="question-text"><span class="question-number">2</span>もんだい4 - 2ばん（音声のみ）</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m4-2" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-2" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-2" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>２、それはどこのカメラですか<br>①一階にあります<br>②日本のです<br>③そこで撮ります<br><br>【Giải thích】Câu 2: Hỏi máy ảnh của hãng nước nào (どこの), trả lời: 日本のです (Của Nhật Bản). Chọn đáp án 2."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m4-3">
+          <div class="question-text"><span class="question-number">3</span>もんだい4 - 3ばん（音声のみ）</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m4-3" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-3" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-3" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>３、どんな鞄を忘れましたか<br>①電車の中です<br>②黒い鞄です<br>③私のです<br><br>【Giải thích】Câu 3: Hỏi quên chiếc cặp như thế nào (どんな), trả lời: 黒い鞄です (Chiếc cặp màu đen). Chọn đáp án 2."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m4-4">
+          <div class="question-text"><span class="question-number">4</span>もんだい4 - 4ばん（音声のみ）</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m4-4" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-4" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-4" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>４、日曜日に行ったレストラン、美味しかったね<br>①何を食べる？<br>②日曜日、大丈夫だよ<br>③また行きたいね<br><br>【Giải thích】Câu 4: Khen nhà hàng chủ nhật đã đi ngon quá nhỉ, đồng tình bằng cách nói: また行きたいね (Lại muốn đi nữa nhỉ). Chọn đáp án 3."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m4-5">
+          <div class="question-text"><span class="question-number">5</span>もんだい4 - 5ばん（音声のみ）</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m4-5" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-5" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-5" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>５、学生の時、何かスポーツをしていましたか<br>①何もしていませんでした<br>②サッカーをしましょう<br>③あの学生がしていました<br><br>【Giải thích】Câu 5: Hỏi hồi học sinh có chơi môn thể thao nào không, trả lời: 何もしていませんでした (Đã không chơi môn nào). Chọn đáp án 1."></div>
+        </div>
+
+        <div class="question-card" data-qid="listen-m4-6">
+          <div class="question-text"><span class="question-number">6</span>もんだい4 - 6ばん（音声のみ）</div>
+          <div class="options-grid">
+            <label class="option-label"><input type="radio" name="listen-m4-6" value="1"><span class="radio-custom"></span><span class="option-num">①</span><span class="option-text">1</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-6" value="2"><span class="radio-custom"></span><span class="option-num">②</span><span class="option-text">2</span></label>
+            <label class="option-label"><input type="radio" name="listen-m4-6" value="3"><span class="radio-custom"></span><span class="option-num">③</span><span class="option-text">3</span></label>
+          </div>
+          <div class="explanation" data-explain="【Script】<br>６、すみません、この駅から山川駅まで、電車でどのくらいかかりますか<br>①１０時１５分です<br>②あの電車です<br>③１０分か１５分です<br><br>【Giải thích】Câu 6: Hỏi đi tàu mất bao lâu (どのくらい), trả lời: １０分か１５分です (10 hoặc 15 phút). Chọn đáp án 3."></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SUBMIT BAR -->
+  <div id="submit-bar" class="submit-bar">
+    <button id="btn-submit" class="btn btn-success btn-large">📤 Nộp bài</button>
+  </div>
+</div>
+
+<!-- ==================== SCREEN 3: RESULT ==================== -->
+<div id="screen-result" class="screen">
+  <div class="result-container">
+    <div class="student-info-result">
+      <div class="info-item"><span class="info-label">Họ tên:</span><span id="result-name" class="info-value">—</span></div>
+      <div class="info-item"><span class="info-label">Lớp:</span><span id="result-class" class="info-value">—</span></div>
+    </div>
+
+    <div class="result-hero">
+      <div id="result-icon" class="result-icon">🎉</div>
+      <h1 id="result-title" class="pass">合格 - ĐỖ!</h1>
+      <p id="result-sub" class="result-sub"></p>
+    </div>
+
+    <div class="score-grid">
+      <div class="score-card" id="score-lang">
+        <div class="score-label">言語知識・読解</div>
+        <div class="score-value" style="color:var(--primary-light)">0</div>
+        <div class="score-max">/ 120 điểm (≥38 để đạt)</div>
+        <div class="score-bar"><div class="score-bar-fill" style="width:0%"></div></div>
+      </div>
+      <div class="score-card" id="score-listening">
+        <div class="score-label">聴解</div>
+        <div class="score-value" style="color:var(--secondary)">0</div>
+        <div class="score-max">/ 60 điểm (≥19 để đạt)</div>
+        <div class="score-bar"><div class="score-bar-fill" style="width:0%"></div></div>
+      </div>
+      <div class="score-card total" id="score-total">
+        <div class="score-label">Tổng điểm</div>
+        <div class="score-value">0</div>
+        <div class="score-max">/ 180 điểm (≥85 để đỗ)</div>
+        <div class="score-bar"><div class="score-bar-fill" style="width:0%"></div></div>
+      </div>
+    </div>
+
+    <div class="pass-info">
+      <h3>📊 Chi tiết kết quả</h3>
+      <table>
+        <thead>
+          <tr><th>Phần thi</th><th>Số câu đúng</th><th>Điểm quy đổi</th><th>Kết quả</th></tr>
+        </thead>
+        <tbody id="detail-tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="result-actions">
+      <button id="btn-review" class="btn btn-secondary btn-large">🔍 Xem lại đáp án</button>
+      <button id="btn-retry" class="btn btn-primary btn-large">🔄 Làm lại</button>
+    </div>
+  </div>
+</div>
+
+<!-- SUBMIT MODAL -->
+<div id="submit-modal" class="modal-overlay">
+  <div class="modal-content">
+    <h3 id="modal-title">📝 Xác nhận nộp bài</h3>
+    <p id="modal-text">Bạn có chắc muốn nộp bài?</p>
+    <div class="modal-actions">
+      <button id="modal-cancel" class="btn btn-secondary">Quay lại</button>
+      <button id="modal-confirm" class="btn btn-success">Nộp bài</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
